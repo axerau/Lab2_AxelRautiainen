@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <title>Axel's Quiz Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to Axel's Quiz Website</h1>
+        <h2>Questions answered: </h2>
+    </header>
+    <div class="form_container">
+        <form>
+            <label for="fname" class="input_label">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name here (required)" required /><br><br>
+
+            <label for="lname" class="input_label">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name (required)" required /><br><br>
+
+            <label for="email" class="input_label">Email:</label><br />
+            <input type="text" id="email" name="email" placeholder="Enter your email address here (required)" required /><br><br>
+
+            <div class="radiobuttons">
+                <p class="input_label">Question 1: What is Axel's favourite colour?</p>
+
+                <div class="radio-option">
+                    <input type="radio" id="Red" name="radiobutton" />
+                    <label for="Red" class="radio_button_title">Red</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="Orange" name="radiobutton" />
+                    <label for="Orange" class="radio_button_title">Orange</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="Yellow" name="radiobutton" />
+                    <label for="Yellow" class="radio_button_title">Yellow</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="Green" name="radiobutton" />
+                    <label for="Green" class="radio_button_title">Green</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="Blue" name="radiobutton" />
+                    <label for="Blue" class="radio_button_title">Blue</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="Purple" name="radiobutton" />
+                    <label for="Purple" class="radio_button_title">Purple</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="Pink" name="radiobutton" />
+                    <label for="Pink" class="radio_button_title">Pink</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="Black" name="radiobutton" />
+                    <label for="Black" class="radio_button_title">Black</label>
+                </div>
+            </div>
+
+
+            <label for="textentry" class="input_label">Question 2: What is the meaning of life?</label><br />
+            <textarea id="textentry" name="textentry" placeholder="Type your answer here..." required></textarea><br><br>
+
+            <input type="submit" value="Submit" id="submit" /><br><br>
+        </form>
+    </div>
+</body>
+</html>
