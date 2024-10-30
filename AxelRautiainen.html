@@ -12,15 +12,18 @@
         <h2>Questions answered: </h2>
     </header>
     <div class="form_container">
-        <form>
+        <form id="quizForm">
             <label for="fname" class="input_label">First name:</label><br>
-            <input type="text" id="fname" name="fname" placeholder="Enter your first name here (required)" required /><br><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name here (required)" class="textInput"/>
+            <span class="inputError" id="fnameError"></span><br><br>
 
             <label for="lname" class="input_label">Last name:</label><br>
-            <input type="text" id="lname" name="lname" placeholder="Enter your last name (required)" required /><br><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name (required)" class="textInput"/>
+            <span class="inputError" id="lnameError"></span><br><br>
 
             <label for="email" class="input_label">Email:</label><br />
-            <input type="text" id="email" name="email" placeholder="Enter your email address here (required)" required /><br><br>
+            <input type="text" id="email" name="email" placeholder="Enter your email address here (required)" class="textInput"/>
+            <span class="inputError" id="emailError"></span>
 
             <div class="radiobuttons">
                 <p class="input_label">Question 1: What is Axel's favourite colour?</p>
@@ -68,10 +71,14 @@
 
 
             <label for="textentry" class="input_label">Question 2: What is the meaning of life?</label><br />
-            <textarea id="textentry" name="textentry" placeholder="Type your answer here..." required></textarea><br><br>
+            <textarea id="q2" name="q2" placeholder="Type your answer here..." class="textInput"></textarea>
+            <span class="inputError" id="q2error"></span><br><br>
 
-            <input type="submit" value="Submit" id="submit" /><br><br>
+            <input type="submit" value="Submit" id="submit" />
+            <span class="inputError" id="submitError"></span>
         </form>
     </div>
+    <script src="AxelRautiainen.js"></script>
 </body>
+
 </html>

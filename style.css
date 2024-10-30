@@ -18,46 +18,30 @@ header {
 }
 
 .form_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*
     margin-left: 30px;
     margin-top: 20px;
-    */
-    margin-top: 50px;
+    padding-bottom: 20px;
 }
 
 .input_label {
-    flex: 1;
     font-size: 40px;
     color: aliceblue;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    text-align: center;
-}
-
-.radiobuttons {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .radio-option {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px; 
+    margin-bottom: 10px; 
 }
 
 
 .radio_button_title {
-    flex: 1;
-    font-size: 40px;
+    font-size: 30px;
     color: aliceblue;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    text-align: center;
 }
 
-input, textarea {
-    flex: 1;
+.textInput {
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     padding: 10px;
@@ -68,12 +52,27 @@ input, textarea {
     resize: none;
 }
 
-#textentry {
+.inputError {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 30px;
+    color: goldenrod;
+    margin-left: 20px;
+    vertical-align: central;
+}
+
+#q2 {
     height: 200px;
 }
 
 #submit {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    padding: 10px;
     width: 828px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: darkgoldenrod;
+    resize: none;
 }
 
 #submit:hover {
