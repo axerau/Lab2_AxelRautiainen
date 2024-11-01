@@ -8,13 +8,11 @@
 }
 
 header {
-    background-color: rgb(4, 30, 62, 0.3);
+    padding: 20px;
     color: aliceblue;
     text-align: center;
-    font-family: Tahoma;
-    border-style: solid;
-    border-width: thin;
-    border-color: goldenrod;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 24px;
 }
 
 .form_container {

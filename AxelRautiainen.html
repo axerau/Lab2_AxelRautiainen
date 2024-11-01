@@ -9,7 +9,8 @@
 <body>
     <header>
         <h1>Welcome to Axel's Quiz Website</h1>
-        <h2>Questions answered: </h2>
+        <h3>Questions 1, 2, 4 and 5 are required. Choosing an incorrect answer on question 3 will award 0 points for that question, so watch out!</h3>
+        <h3>A maximum of 6 points can be obtained. Good luck!</h3>
     </header>
     <div class="form_container">
         <form id="quizForm">
@@ -23,7 +24,7 @@
 
             <label for="email" class="input_label">Email: <span class="inputError" id="emailError"></span></label><br />
             <input type="text" id="email" name="email" placeholder="Enter your email address here (required)" class="textInput" />
-            
+
 
             <div class="radiobuttons">
                 <p class="input_label">Question 1: What is Axel's favourite colour? <span class="inputError" id="q1Info"></span></p>
@@ -69,7 +70,7 @@
                 </div>
             </div>
 
-            <label for="textentry" class="input_label">Question 2: What is the meaning of life? <span class="inputError" id="q2Info"></span></label><br />
+            <label for="q2" class="input_label">Question 2: What is the meaning of life? <span class="inputError" id="q2Info"></span></label><br />
             <textarea id="q2" name="q2" placeholder="Type your answer here..." class="textInput"></textarea>
 
             <div class="checkboxes">
@@ -84,7 +85,7 @@
                     <input type="checkbox" id="python" name="languages" value="Python" />
                     <label for="python" class="option-title">Python</label>
                 </div>
-                
+
                 <div class="checkbox-option">
                     <input type="checkbox" id="linux" name="languages" value="Linux" />
                     <label for="linux" class="option-title">Linux</label>
@@ -101,8 +102,60 @@
                 </div>
             </div>
 
+            <div class="radiobuttons">
+                <p class="input_label">Question 4: What is the capital of Belgium? <span class="inputError" id="q4Info"></span></p>
+
+                <div class="radio-option">
+                    <input type="radio" id="paris" name="capitals" />
+                    <label for="paris" class="option-title">Paris</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="brussels" name="capitals" />
+                    <label for="brussels" class="option-title">Brussels</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="stockholm" name="capitals" />
+                    <label for="stockholm" class="option-title">Stockholm</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="helsinki" name="capitals" />
+                    <label for="helsinki" class="option-title">Helsinki</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="budapest" name="capitals" />
+                    <label for="budapest" class="option-title">Budapest</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="vienna" name="capitals" />
+                    <label for="vienna" class="option-title">Vienna</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="bern" name="capitals" />
+                    <label for="bern" class="option-title">Bern</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="zurich" name="capitals" />
+                    <label for="zurich" class="option-title">Zurich</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="geneva" name="capitals" />
+                    <label for="geneva" class="option-title">Geneva</label>
+                </div>
+            </div>
+
+            <label for="textentry" class="input_label">Question 5: What is 77+33? <span class="inputError" id="q5Info"></span></label><br />
+            <textarea id="q5" name="q5" placeholder="Type your answer here..." class="textInput"></textarea>
+
             <input type="submit" value="Submit" id="submit" />
-            <span class="inputError" id="submitError"></span>
+
         </form>
     </div>
     <script src="AxelRautiainen.js"></script>
