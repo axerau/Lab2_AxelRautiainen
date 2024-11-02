@@ -9,25 +9,25 @@
 <body>
     <header>
         <h1>Welcome to Axel's Quiz Website</h1>
-        <h3>Questions 1, 2, 4 and 5 are required. Choosing an incorrect answer on question 3 will award 0 points for that question, so watch out!</h3>
+        <h3>Required inputs are marked with a *</h3>
         <h3>A maximum of 6 points can be obtained. Good luck!</h3>
     </header>
     <div class="form_container">
         <form id="quizForm">
-            <label for="fname" class="input_label">First name: <span class="inputError" id="fnameError"></span></label><br>
-            <input type="text" id="fname" name="fname" placeholder="Enter your first name here (required)" class="textInput" />
+            <label for="fname" class="input_label">First name:<span class="inputError" id="fnameError">*</span></label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter first name (required)" class="textInput" />
             <br><br>
 
-            <label for="lname" class="input_label">Last name: <span class="inputError" id="lnameError"></span></label><br>
-            <input type="text" id="lname" name="lname" placeholder="Enter your last name (required)" class="textInput" />
+            <label for="lname" class="input_label">Last name:<span class="inputError" id="lnameError">*</span></label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter last name (required)" class="textInput" />
             <br><br>
 
-            <label for="email" class="input_label">Email: <span class="inputError" id="emailError"></span></label><br />
-            <input type="text" id="email" name="email" placeholder="Enter your email address here (required)" class="textInput" />
+            <label for="email" class="input_label">Email:<span class="inputError" id="emailError">*</span></label><br />
+            <input type="text" id="email" name="email" placeholder="Enter email address (required)" class="textInput" />
 
 
             <div class="radiobuttons">
-                <p class="input_label">Question 1: What is Axel's favourite colour? <span class="inputError" id="q1Info"></span></p>
+                <p class="input_label">Question 1: What is Axel's favourite colour?<span class="inputError" id="q1Info">*</span></p>
 
                 <div class="radio-option">
                     <input type="radio" id="Red" name="colors" />
@@ -70,11 +70,11 @@
                 </div>
             </div>
 
-            <label for="q2" class="input_label">Question 2: What is the meaning of life? <span class="inputError" id="q2Info"></span></label><br />
+            <label for="q2" class="input_label">Question 2: What did you do yesterday?<span class="inputError" id="q2Info">*</span></label><br />
             <textarea id="q2" name="q2" placeholder="Type your answer here..." class="textInput"></textarea>
 
             <div class="checkboxes">
-                <p class="input_label">Question 3: Which of these are programming languages? <span class="inputError" id="q3Info"></span></p>
+                <p class="input_label">Question 3: Which of these (if any) are programming languages?<span class="inputError" id="q3Info"></span></p>
 
                 <div class="checkbox-option">
                     <input type="checkbox" id="cpp" name="languages" value="C++" />
@@ -103,7 +103,7 @@
             </div>
 
             <div class="radiobuttons">
-                <p class="input_label">Question 4: What is the capital of Belgium? <span class="inputError" id="q4Info"></span></p>
+                <p class="input_label">Question 4: What is the capital of Belgium?<span class="inputError" id="q4Info">*</span></p>
 
                 <div class="radio-option">
                     <input type="radio" id="paris" name="capitals" />
@@ -151,8 +151,8 @@
                 </div>
             </div>
 
-            <label for="textentry" class="input_label">Question 5: What is 77+33? <span class="inputError" id="q5Info"></span></label><br />
-            <textarea id="q5" name="q5" placeholder="Type your answer here..." class="textInput"></textarea>
+            <label for="textentry" class="input_label">Question 5: What is 77+33?<span class="inputError" id="q5Info">*</span></label><br />
+            <textarea id="q5" name="q5" placeholder="Type your answer here..." class="textInput"></textarea><br />
 
             <input type="submit" value="Submit" id="submit" />
 
