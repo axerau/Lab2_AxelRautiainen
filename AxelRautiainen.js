@@ -52,6 +52,7 @@ form.addEventListener("submit", function(event) {
     // Validate question 1
     const q1 = document.querySelectorAll('input[name="colors"]:checked');
     let q1Incorrect = false;
+    /*
     if (q1.length === 0) {
         isValid = false;
         q1Info.textContent = "Please answer this question";
@@ -59,6 +60,11 @@ form.addEventListener("submit", function(event) {
         score++;
     } else {
         q1Incorrect = true;
+    } */
+    if (q1.length === 0 || q1[0].id !== "Blue") {
+        q1Incorrect = true;
+    } else {
+        score++;
     }
 
     // Validate question 2
@@ -81,6 +87,10 @@ form.addEventListener("submit", function(event) {
             q3Answers.push(option.value);
         }
     });
+    if (q3Answers.length === 0) { // If no answers were selected, question 3 is invalid
+        isValid = false;
+        q3Info.textContent = "Please answer this question";
+    }
     for (let i = 0; i < q3Right.length; i++) { // Loop through correct answers and award a point for each
         if (q3Answers.includes(q3Right[i])) {
             awarded++;
